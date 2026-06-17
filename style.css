@@ -1,28 +1,186 @@
-// Samanta ir Bronius
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
 
-console.log("Samanta ir Bronius Rupšai");
+html {
+scroll-behavior: smooth;
+}
 
-// Sklandus meniu veikimas
+body {
+background: #faf8f4;
+color: #333;
+font-family: 'Cormorant Garamond', serif;
+line-height: 1.6;
+}
 
-document.querySelectorAll('.menu a').forEach(link => {
+/* HERO */
 
-    link.addEventListener('click', function(e) {
+.hero {
+height: 70vh;
 
-        e.preventDefault();
+```
+background: linear-gradient(
+    rgba(0,0,0,0.35),
+    rgba(0,0,0,0.35)
+),
+url("https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=2000");
 
-        const targetId = this.getAttribute('href');
+background-size: cover;
+background-position: center;
 
-        const targetSection = document.querySelector(targetId);
+display: flex;
+justify-content: center;
+align-items: center;
 
-        if(targetSection){
+text-align: center;
+```
 
-            targetSection.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
+}
 
-        }
+.hero-content {
+color: white;
+}
 
-    });
+.date {
+font-size: 1.2rem;
+letter-spacing: 3px;
+margin-bottom: 20px;
+}
 
-});
+.hero h1 {
+font-size: 4rem;
+font-weight: 300;
+}
+
+.hero h2 {
+font-size: 2rem;
+font-weight: 300;
+}
+
+.heart {
+font-size: 2rem;
+margin-top: 20px;
+}
+
+/* MENIU */
+
+.menu {
+background: white;
+
+```
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+
+position: sticky;
+top: 0;
+
+z-index: 1000;
+
+box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+```
+
+}
+
+.menu a {
+text-decoration: none;
+color: #333;
+
+```
+padding: 20px 25px;
+
+transition: 0.3s;
+```
+
+}
+
+.menu a:hover {
+color: #b88c4a;
+}
+
+/* SEKCJOS */
+
+.section {
+max-width: 1000px;
+margin: auto;
+padding: 80px 20px;
+}
+
+.section-title {
+text-align: center;
+font-size: 2.8rem;
+margin-bottom: 40px;
+}
+
+/* KORTELĖS */
+
+.card {
+background: white;
+
+```
+padding: 30px;
+
+border-radius: 16px;
+
+margin-bottom: 25px;
+
+box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+```
+
+}
+
+/* MYGTUKAI */
+
+.button {
+display: inline-block;
+
+```
+background: #b88c4a;
+color: white;
+
+text-decoration: none;
+
+padding: 12px 25px;
+
+border-radius: 30px;
+```
+
+}
+
+.button:hover {
+opacity: 0.9;
+}
+
+/* FOOTER */
+
+footer {
+text-align: center;
+padding: 50px 20px;
+color: #777;
+}
+
+/* MOBILUS */
+
+@media (max-width: 768px) {
+
+```
+.hero h1 {
+    font-size: 2.8rem;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+}
+
+.menu {
+    flex-direction: column;
+}
+
+.menu a {
+    text-align: center;
+}
+```
+
+}
