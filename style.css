@@ -1,11 +1,188 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#111;
+    color:white;
+    font-family:'Cormorant Garamond', serif;
+}
+
+/* Viršelis */
+
 .hero{
     height:100vh;
-    background-image:url("https://images.unsplash.com/photo-1511285560929-80b456fea0bc");
+
+    background-image:url("https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=2000");
+
     background-size:cover;
     background-position:center;
+
     position:relative;
 
     display:flex;
     justify-content:center;
     align-items:center;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
+
+.hero-content{
+    position:relative;
+    text-align:center;
+    z-index:2;
+}
+
+.date{
+    font-size:1.2rem;
+    letter-spacing:3px;
+    margin-bottom:20px;
+}
+
+h1{
+    font-size:5rem;
+    font-weight:300;
+    line-height:1.1;
+}
+
+h2{
+    font-size:3rem;
+    font-weight:300;
+    margin-top:10px;
+}
+
+.heart{
+    margin-top:30px;
+    font-size:2rem;
+}
+
+/* Meniu */
+
+.menu{
+    background:#181818;
+
+    display:flex;
+    flex-direction:column;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+
+    text-align:center;
+
+    padding:35px;
+
+    font-size:1.8rem;
+
+    border-bottom:1px solid rgba(255,255,255,.15);
+
+    transition:0.3s;
+}
+
+.menu a:hover{
+    background:#222;
+}
+
+/* Bendri skyriai */
+
+.section{
+    padding:80px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:50px;
+}
+
+/* Kortelės */
+
+.card{
+    background:#1b1b1b;
+    padding:30px;
+    border-radius:15px;
+    margin-bottom:25px;
+}
+
+/* Mygtukai */
+
+.button{
+    display:inline-block;
+
+    padding:15px 35px;
+
+    border:1px solid white;
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-top:20px;
+
+    transition:.3s;
+}
+
+.button:hover{
+    background:white;
+    color:#111;
+}
+
+/* Lentelės */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th, td{
+    padding:15px;
+    border-bottom:1px solid rgba(255,255,255,.15);
+}
+
+th{
+    font-size:1.3rem;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:50px 20px;
+    color:rgba(255,255,255,.5);
+}
+
+/* Telefonams */
+
+@media(max-width:768px){
+
+    h1{
+        font-size:3.5rem;
+    }
+
+    h2{
+        font-size:2.2rem;
+    }
+
+    .menu a{
+        font-size:1.5rem;
+        padding:30px;
+    }
+
+    .section-title{
+        font-size:2.3rem;
+    }
+
 }
