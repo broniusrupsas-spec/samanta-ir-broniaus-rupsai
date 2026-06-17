@@ -1,256 +1,170 @@
-<!DOCTYPE html>
-<html lang="lt">
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Cormorant Garamond', serif;
+    background:#f8f5f0;
+    color:#333;
+    line-height:1.6;
+}
 
-    <title>Samanta ir Bronius</title>
+/* Viršus */
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+.hero{
+    height:70vh;
 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
+    background-image:url("https://images.unsplash.com/photo-1519741497674-611481863552?w=2000");
 
-    <link rel="stylesheet" href="style.css">
-</head>
+    background-size:cover;
+    background-position:center;
 
-<body>
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-    <section class="hero">
+    position:relative;
+}
 
-        <div class="overlay"></div>
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.35);
+}
 
-        <div class="hero-content">
+.hero-content{
+    position:relative;
+    z-index:2;
+    text-align:center;
+    color:white;
+}
 
-            <p class="date">
-                2026 • Rugpjūčio 15
-            </p>
+.date{
+    font-size:1.2rem;
+    letter-spacing:3px;
+}
 
-            <h1>Samanta</h1>
+h1{
+    font-size:4rem;
+    font-weight:300;
+}
 
-            <h2>&</h2>
+.hero h2{
+    font-size:2rem;
+    font-weight:300;
+}
 
-            <h1>Bronius</h1>
+.heart{
+    font-size:2rem;
+    margin-top:20px;
+}
 
-            <div class="heart">
-                ♥
-            </div>
+/* Meniu */
 
-        </div>
+.menu{
+    position:sticky;
+    top:0;
 
-    </section>
+    background:white;
 
-    <section class="menu">
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
 
-        <a href="#baznycia">Santuokos vieta</a>
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
 
-        <a href="#svente">Šventės vieta</a>
+    z-index:999;
+}
 
-        <a href="#programa">Dienotvarkė</a>
+.menu a{
+    text-decoration:none;
+    color:#333;
 
-        <a href="#stalai">Kur mano vieta?</a>
+    padding:20px;
 
-        <a href="#zemelapis">Informacija</a>
+    font-size:1.1rem;
+}
 
-    </section>
+.menu a:hover{
+    color:#b9935a;
+}
 
-    <section class="section" id="baznycia">
+/* Sekcijos */
 
-        <h2 class="section-title">
-            Santuokos vieta
-        </h2>
+.section{
+    max-width:1000px;
+    margin:auto;
+    padding:80px 20px;
+}
 
-        <div class="card">
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2.5rem;
+}
 
-            <h3>Kauno Šv. Gertrūdos (Marijonų) bažnyčia</h3>
+/* Kortelės */
 
-            <br>
+.card{
+    background:white;
 
-            <a class="button"
-                target="_blank"
-                href="https://www.google.com/maps/place/Kauno+Šv.+Gertrūdos+(Marijonų)+bažnyčia/">
-                Atidaryti Google Maps
-            </a>
+    padding:30px;
 
-            <p style="margin-top:20px;">
-                Laisvės al. 101B, Kaunas
-            </p>
+    border-radius:15px;
 
-        </div>
+    margin-bottom:25px;
 
-    </section>
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
 
-    <section class="section" id="svente">
+/* Mygtukai */
 
-        <h2 class="section-title">
-            Šventės vieta
-        </h2>
+.button{
+    display:inline-block;
 
-        <div class="card">
+    background:#b9935a;
 
-            <h3>Sherolle Vila</h3>
+    color:white;
 
-            <br>
+    text-decoration:none;
 
-            <a class="button"
-                target="_blank"
-                href="https://www.google.com/maps/place/Sherolle+Vila/">
-                Atidaryti Google Maps
-            </a>
-
-            <p style="margin-top:20px;">
-                Paukščių g. 18, Lašinių k., Kaišiadorių raj.
-            </p>
+    padding:12px 25px;
 
-        </div>
+    border-radius:30px;
+}
 
-    </section>
+.button:hover{
+    opacity:.9;
+}
 
-    <section class="section" id="programa">
+/* Footer */
 
-        <h2 class="section-title">
-            Šventės dienotvarkė
-        </h2>
+footer{
+    text-align:center;
+    padding:50px 20px;
+    color:#777;
+}
 
-        <div class="card">
-            <h3>14:00</h3>
-            <p>Santuokos ceremonija</p>
-        </div>
+/* Telefonai */
 
-        <div class="card">
-            <h3>16:00</h3>
-            <p>Atvykimas į Sherolle Vila</p>
-        </div>
+@media(max-width:768px){
 
-        <div class="card">
-            <h3>18:00</h3>
-            <p>Vakarienė ir šventės pradžia</p>
-        </div>
+    h1{
+        font-size:2.8rem;
+    }
 
-    </section>
+    .hero h2{
+        font-size:1.6rem;
+    }
 
-    <section class="section" id="stalai">
+    .menu{
+        flex-direction:column;
+    }
 
-        <h2 class="section-title">
-            Kur mano vieta?
-        </h2>
-
-        <div class="card">
-
-            <h3>1 stalas</h3>
-
-            <br>
-
-            <p>
-                Evelinos brolis<br>
-                Evelina<br>
-                Valerija<br>
-                Julija<br>
-                Kamilė (bendr.)<br>
-                Gintė<br>
-                Tomas<br>
-                Diana<br>
-                Dianos vyras<br>
-                Pijus<br>
-                Kamilė
-            </p>
-
-        </div>
-
-        <div class="card">
-
-            <h3>2 stalas</h3>
-
-            <br>
-
-            <p>
-                Violeta<br>
-                Laura<br>
-                Viktoras<br>
-                Nerijus<br>
-                Renata<br>
-                Karolis<br>
-                Zita<br>
-                Stanislavas<br>
-                Dianos vyras<br>
-                Svetlana
-            </p>
-
-        </div>
-
-        <div class="card">
-
-            <h3>3 stalas</h3>
-
-            <br>
-
-            <p>
-                Meida<br>
-                Samanta<br>
-                Bronius<br>
-                Edvinas<br>
-                Ema<br>
-                Varasa<br>
-                Žygis<br>
-                Paulius<br>
-                Indrė<br>
-                Gabija<br>
-                Dalia<br>
-                Patricija
-            </p>
-
-        </div>
-
-        <div class="card">
-
-            <h3>5 stalas</h3>
-
-            <br>
-
-            <p>
-                Martas<br>
-                Laurynas<br>
-                Viktorija<br>
-                Jurga<br>
-                Nerijus<br>
-                Marius<br>
-                Justinas<br>
-                Nerijus (kitas)
-            </p>
-
-        </div>
-
-    </section>
-
-    <section class="section" id="zemelapis">
-
-        <h2 class="section-title">
-            Svarbi informacija
-        </h2>
-
-        <div class="card">
-
-            <h3>Kontaktai</h3>
-
-            <br>
-
-            <p>
-                Jei turite klausimų dėl atvykimo ar nakvynės,
-                susisiekite su jaunaisiais.
-            </p>
-
-        </div>
-
-    </section>
-
-    <footer>
-        Samanta & Bronius • 2026
-    </footer>
-
-    <script src="script.js"></script>
-
-</body>
-
-</html>
+}
