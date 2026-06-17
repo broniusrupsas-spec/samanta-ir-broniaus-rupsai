@@ -1,2 +1,2 @@
-# samanta ir broniaus rupsai
+# Samanta ir Broniaus Rupšai
 Viskas vestuvėms
