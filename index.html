@@ -1,170 +1,57 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samanta ir Bronius Rupšai</title>
 
-html{
-    scroll-behavior:smooth;
-}
+    <style>
+        body{
+            margin:0;
+            font-family: Georgia, serif;
+            background:#f8f5f0;
+            color:#4a4a4a;
+            text-align:center;
+        }
 
-body{
-    font-family:'Cormorant Garamond', serif;
-    background:#f8f5f0;
-    color:#333;
-    line-height:1.6;
-}
+        .hero{
+            height:100vh;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+        }
 
-/* Viršus */
+        h1{
+            font-size:4rem;
+            margin-bottom:10px;
+            font-weight:normal;
+        }
 
-.hero{
-    height:70vh;
+        h2{
+            font-size:1.5rem;
+            font-weight:normal;
+            letter-spacing:3px;
+        }
 
-    background-image:url("https://images.unsplash.com/photo-1519741497674-611481863552?w=2000");
+        .heart{
+            font-size:2rem;
+            margin-top:20px;
+        }
+    </style>
+</head>
+<body>
 
-    background-size:cover;
-    background-position:center;
+<div class="hero">
+    <h1>Samanta ir Bronius</h1>
+    <h2>Rupšai</h2>
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    <div class="heart">
+        ♡
+    </div>
 
-    position:relative;
-}
+    <p>2026</p>
+</div>
 
-.overlay{
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,.35);
-}
-
-.hero-content{
-    position:relative;
-    z-index:2;
-    text-align:center;
-    color:white;
-}
-
-.date{
-    font-size:1.2rem;
-    letter-spacing:3px;
-}
-
-h1{
-    font-size:4rem;
-    font-weight:300;
-}
-
-.hero h2{
-    font-size:2rem;
-    font-weight:300;
-}
-
-.heart{
-    font-size:2rem;
-    margin-top:20px;
-}
-
-/* Meniu */
-
-.menu{
-    position:sticky;
-    top:0;
-
-    background:white;
-
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-
-    box-shadow:0 2px 10px rgba(0,0,0,.08);
-
-    z-index:999;
-}
-
-.menu a{
-    text-decoration:none;
-    color:#333;
-
-    padding:20px;
-
-    font-size:1.1rem;
-}
-
-.menu a:hover{
-    color:#b9935a;
-}
-
-/* Sekcijos */
-
-.section{
-    max-width:1000px;
-    margin:auto;
-    padding:80px 20px;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:40px;
-    font-size:2.5rem;
-}
-
-/* Kortelės */
-
-.card{
-    background:white;
-
-    padding:30px;
-
-    border-radius:15px;
-
-    margin-bottom:25px;
-
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-}
-
-/* Mygtukai */
-
-.button{
-    display:inline-block;
-
-    background:#b9935a;
-
-    color:white;
-
-    text-decoration:none;
-
-    padding:12px 25px;
-
-    border-radius:30px;
-}
-
-.button:hover{
-    opacity:.9;
-}
-
-/* Footer */
-
-footer{
-    text-align:center;
-    padding:50px 20px;
-    color:#777;
-}
-
-/* Telefonai */
-
-@media(max-width:768px){
-
-    h1{
-        font-size:2.8rem;
-    }
-
-    .hero h2{
-        font-size:1.6rem;
-    }
-
-    .menu{
-        flex-direction:column;
-    }
-
-}
+</body>
+</html>
