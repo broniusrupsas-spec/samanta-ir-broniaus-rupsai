@@ -8,6 +8,12 @@
 <title>Kur mano vieta?</title>
 
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="vieta.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
 
 </head>
 
@@ -21,65 +27,64 @@ Kur mano vieta?
 
 </h1>
 
-<div class="card">
+<div class="search-box">
 
-<h3>
+<input
+id="searchInput"
+type="text"
+placeholder="Įveskite vardą">
 
-1 stalas
+<button onclick="findSeat()">
 
-</h3>
+Rasti
 
-<p>
-
-Evelinos brolis<br>
-Evelina<br>
-Valerija<br>
-Julija<br>
-Kamilė (bendr.)<br>
-Gintė<br>
-Tomas<br>
-Diana<br>
-Dianos vyras<br>
-Pijus<br>
-Kamilė
-
-</p>
+</button>
 
 </div>
 
-<div class="card">
-
-<h3>
-
-2 stalas
-
-</h3>
-
-<p>
-
-Violeta<br>
-Laura<br>
-Viktoras<br>
-Nerijus<br>
-Renata<br>
-Karolis<br>
-Zita<br>
-Stanislavas<br>
-Dianos vyras<br>
-Svetlana
-
-</p>
+<div id="result">
 
 </div>
 
-<a class="back-button"
-href="index.html">
+
+<div class="tables-layout">
+
+<div class="table table1">
+    <div class="circle yellow">1</div>
+</div>
+
+
+<div class="table table2">
+    <div class="circle purple">2</div>
+</div>
+
+
+<div class="table table3">
+    <div class="circle blue">3</div>
+</div>
+
+
+<div class="table table4">
+    <div class="circle green">4</div>
+</div>
+
+
+<div class="table table5">
+    <div class="circle pink">5</div>
+</div>
+
+
+</div>
+
+<a class="back-button" href="index.html">
 
 ← Pagrindinis puslapis
 
 </a>
 
 </div>
+
+<script src="vieta.js"></script>
 
 </body>
 </html>
