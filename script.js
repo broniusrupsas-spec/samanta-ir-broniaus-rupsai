@@ -1,33 +1,40 @@
 function countdown() {
 
-const target = new Date("2026-08-08T13:00:00");
+    const target = new Date("2026-08-08T13:00:00");
 
-const now = new Date();
+    const now = new Date();
 
-const diff = target - now;
+    const difference = target - now;
 
-const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
 
-const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
 
-const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const minutes = Math.floor((difference / (1000 * 60)) % 60);
 
-const seconds = Math.floor((diff / 1000) % 60);
+    const seconds = Math.floor((difference / 1000) % 60);
 
-document.getElementById("countdown").innerHTML =
-`
-<h3>LIKĘ IKI ŠVENTĖS</h3>
+    document.getElementById("countdown").innerHTML =
 
-<p>
+    `
+    <div class="countdown-box">
 
-${days} dienų<br>
-${hours} val.<br>
-${minutes} min.<br>
-${seconds} sek.
+        <h3>LIKĘ IKI ŠVENTĖS</h3>
 
-</p>
-`;
+        <div class="time">
+
+            ${days} d.
+            ${hours} val.
+            ${minutes} min.
+            ${seconds} sek.
+
+        </div>
+
+    </div>
+    `;
 
 }
+
+countdown();
 
 setInterval(countdown,1000);
