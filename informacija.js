@@ -1,26 +1,103 @@
-function ieskoti(){
+const accommodation = [
+    { name: "Samanta", place: "Namas miegojimui – pirmas" },
+    { name: "Bronius", place: "Namas miegojimui – pirmas" },
+    { name: "Edvinas", place: "Namas miegojimui – pirmas" },
+    { name: "Ema", place: "Namas miegojimui – pirmas" },
+    { name: "Vasa", place: "Namas miegojimui – pirmas" },
+    { name: "Žygis", place: "Namas miegojimui – pirmas" },
+    { name: "Paulius", place: "Namas miegojimui – pirmas" },
+    { name: "Indrė", place: "Namas miegojimui – pirmas" },
+    { name: "Gaja", place: "Namas miegojimui – pirmas" },
+    { name: "Daiva", place: "Namas miegojimui – pirmas" },
+    { name: "Patricija", place: "Namas miegojimui – pirmas" },
+    { name: "Meida", place: "Namas miegojimui – pirmas" },
 
-let vardas =
-document.getElementById("vardas").value.toLowerCase();
+    { name: "Laura", place: "Namas miegojimui – antras" },
+    { name: "Viktoras", place: "Namas miegojimui – antras" },
+    { name: "Nerijus", place: "Namas miegojimui – antras" },
+    { name: "Renata", place: "Namas miegojimui – antras" },
+    { name: "Karolis", place: "Namas miegojimui – antras" },
+    { name: "Zita", place: "Namas miegojimui – antras" },
+    { name: "Diana", place: "Namas miegojimui – antras" },
+    { name: "Slavinas", place: "Namas miegojimui – antras" },
+    { name: "Gintė", place: "Namas miegojimui – antras" },
 
-let vieta = "Vieta dar nepriskirta";
+    { name: "Evelina", place: "Kupolas" },
+    { name: "Evelinos bičas", place: "Kupolas" },
+    { name: "Kamilė", place: "Kupolas" },
+    { name: "Pijus", place: "Kupolas" },
+    { name: "Dianos vyras", place: "Kupolas" },
+    { name: "Tomas", place: "Kupolas" },
+    { name: "Julija", place: "Kupolas" },
+    { name: "Valerija", place: "Kupolas" },
 
-if(vardas=="tomas")
-vieta="Kupolas";
+    { name: "Kamilės vyras", place: "Namas miegojimui – trečias" },
+    { name: "Kamilė sr.", place: "Namas miegojimui – trečias" },
+    { name: "Aušrinė", place: "Namas miegojimui – trečias" },
+    { name: "Giedrius", place: "Namas miegojimui – trečias" }
+];
 
-if(vardas=="samanta")
-vieta="Didysis namas";
+const info = {
+    namas1: `
+        <h2>🏠 Namas miegojimui – pirmas</h2>
+        <p>Pagrindinis miegamasis namas viršutinėje sodybos dalyje.</p>
+    `,
 
-if(vardas=="bronius")
-vieta="Didysis namas";
+    sale: `
+        <h2>🏛️ Pokylių salė</h2>
+        <p>Čia vyks pagrindinė vestuvių šventė: vakarienė, vedėjo programa, muzika ir šokiai.</p>
+        <p>Nuo maždaug 01:00–02:00 val. šventės dalis persikels į šią erdvę.</p>
+    `,
 
-if(vardas=="giedrius")
-vieta="Mažasis namas";
+    namas2: `
+        <h2>🏠 Namas miegojimui – antras</h2>
+        <p>Papildomas miegamasis namas prie takelio.</p>
+    `,
 
-if(vardas=="rokas")
-vieta="Namas prie tvenkinio";
+    kupolas: `
+        <h2>🏕️ Kupolas</h2>
+        <p>Poilsio zona prie tvenkinio.</p>
+        <p>Čia galės vykti ramesni pokalbiai, poilsis ir jaukus pasibuvimas.</p>
+    `,
 
-document.getElementById("result").innerHTML=
-"🏠 Jūsų nakvynės vieta:<br><br><b>"+vieta+"</b>";
+    namas3: `
+        <h2>🏠 Namas miegojimui – trečias</h2>
+        <p>Papildomas namelis apačioje dešinėje.</p>
+        <p>Šiame namelyje numatytos 4 miegamos vietos.</p>
+    `
+};
 
+function normalizeText(text){
+    return text
+        .toLowerCase()
+        .trim()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+}
+
+function findSleepPlace(){
+    const input = normalizeText(document.getElementById("sleepInput").value);
+    const result = document.getElementById("sleepResult");
+
+    if(input === ""){
+        result.innerHTML = "Įveskite vardą.";
+        return;
+    }
+
+    const person = accommodation.find(guest =>
+        normalizeText(guest.name) === input
+    );
+
+    if(person){
+        result.innerHTML = `
+            🏠 Jūsų nakvynės vieta:<br>
+            <strong>${person.place}</strong>
+        `;
+    }else{
+        result.innerHTML = "Vardas nerastas. Pasitikrinkite, ar įrašėte teisingai.";
+    }
+}
+
+function showInfo(place){
+    document.getElementById("infoBox").innerHTML = info[place];
 }
