@@ -19,8 +19,7 @@ body{
 .hero{
     height:100vh;
 
-    background-image:url("https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=2000");
-
+    background-image:url("hero.jpg");
     background-size:cover;
     background-position:center;
 
@@ -34,35 +33,44 @@ body{
 .overlay{
     position:absolute;
     inset:0;
-    background:rgba(0,0,0,.45);
+
+    background:rgba(0,0,0,.35);
 }
 
 .hero-content{
     position:relative;
-    text-align:center;
     z-index:2;
+
+    text-align:center;
 }
 
 .date{
-    font-size:1.2rem;
-    letter-spacing:3px;
+    font-size:1.3rem;
+
+    letter-spacing:4px;
+
     margin-bottom:20px;
 }
 
 h1{
     font-size:5rem;
+
     font-weight:300;
+
     line-height:1.1;
 }
 
 h2{
     font-size:3rem;
+
     font-weight:300;
+
     margin-top:10px;
 }
 
 .heart{
-    margin-top:30px;
+    margin-top:25px;
+
     font-size:2rem;
 }
 
@@ -72,11 +80,13 @@ h2{
     background:#181818;
 
     display:flex;
+
     flex-direction:column;
 }
 
 .menu a{
     color:white;
+
     text-decoration:none;
 
     text-align:center;
@@ -85,42 +95,63 @@ h2{
 
     font-size:1.8rem;
 
-    border-bottom:1px solid rgba(255,255,255,.15);
+    border-bottom:1px solid rgba(255,255,255,.12);
 
-    transition:0.3s;
+    transition:.3s;
 }
 
 .menu a:hover{
     background:#222;
 }
 
-/* Bendri skyriai */
+/* Bendri puslapiai */
 
-.section{
-    padding:80px 20px;
+.page{
     max-width:1000px;
+
     margin:auto;
+
+    padding:80px 20px;
 }
 
-.section-title{
+.page-title{
     text-align:center;
-    font-size:3rem;
-    margin-bottom:50px;
-}
 
-/* Kortelės */
+    font-size:4rem;
+
+    margin-bottom:60px;
+
+    font-weight:300;
+}
 
 .card{
     background:#1b1b1b;
-    padding:30px;
-    border-radius:15px;
-    margin-bottom:25px;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    margin-bottom:30px;
 }
 
-/* Mygtukai */
+.card h3{
+    font-size:2rem;
+
+    font-weight:400;
+
+    margin-bottom:20px;
+}
+
+.card p{
+    line-height:1.8;
+
+    font-size:1.3rem;
+}
 
 .button{
     display:inline-block;
+
+    margin-top:20px;
 
     padding:15px 35px;
 
@@ -130,38 +161,53 @@ h2{
 
     text-decoration:none;
 
-    margin-top:20px;
-
     transition:.3s;
 }
 
 .button:hover{
     background:white;
+
     color:#111;
+}
+
+.back-button{
+    display:inline-block;
+
+    margin-top:50px;
+
+    color:white;
+
+    text-decoration:none;
+
+    border:1px solid rgba(255,255,255,.2);
+
+    padding:15px 30px;
+
+    transition:.3s;
+}
+
+.back-button:hover{
+    background:#222;
 }
 
 /* Lentelės */
 
 table{
     width:100%;
+
     border-collapse:collapse;
 }
 
 th, td{
     padding:15px;
+
     border-bottom:1px solid rgba(255,255,255,.15);
+
+    text-align:left;
 }
 
 th{
     font-size:1.3rem;
-}
-
-/* Footer */
-
-footer{
-    text-align:center;
-    padding:50px 20px;
-    color:rgba(255,255,255,.5);
 }
 
 /* Telefonams */
@@ -169,20 +215,33 @@ footer{
 @media(max-width:768px){
 
     h1{
-        font-size:3.5rem;
+        font-size:3.4rem;
     }
 
     h2{
         font-size:2.2rem;
     }
 
+    .date{
+        font-size:1rem;
+    }
+
     .menu a{
         font-size:1.5rem;
+
         padding:30px;
     }
 
-    .section-title{
-        font-size:2.3rem;
+    .page-title{
+        font-size:2.8rem;
+    }
+
+    .card h3{
+        font-size:1.6rem;
+    }
+
+    .card p{
+        font-size:1.1rem;
     }
 
 }
