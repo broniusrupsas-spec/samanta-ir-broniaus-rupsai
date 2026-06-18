@@ -1,46 +1,69 @@
 <!DOCTYPE html>
 <html lang="lt">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Žemėlapis ir informacija</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="informacija.css">
 
-<title>Informacija</title>
-
-<link rel="stylesheet" href="style.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<div class="page">
+<div class="map-page">
 
-<h1 class="page-title">
-Informacija
-</h1>
+    <h1>Žemėlapis</h1>
 
-<div class="card">
+    <p class="subtitle">
+        Čia galite rasti savo nakvynės vietą ir svarbiausią informaciją apie sodybą.
+    </p>
 
-<h3>
-Svarbi informacija
-</h3>
+    <div class="sleep-search">
+        <h2>Kur aš nakvosiu?</h2>
 
-<p>
+        <input id="sleepInput" type="text" placeholder="Įveskite vardą">
 
-Daugiau informacijos bus paskelbta artėjant šventei.
+        <button onclick="findSleepPlace()">Rasti</button>
 
-</p>
+        <div id="sleepResult"></div>
+    </div>
+
+    <p class="hint">
+        Bakstelėkite ženkliuką ant pastato.
+    </p>
+
+    <div class="map-wrapper">
+
+        <img src="zemelapis.png" alt="Sodybos žemėlapis">
+
+        <button class="map-marker marker-1" onclick="showInfo('namas1')">i</button>
+
+        <button class="map-marker marker-2" onclick="showInfo('sale')">i</button>
+
+        <button class="map-marker marker-3" onclick="showInfo('namas2')">i</button>
+
+        <button class="map-marker marker-4" onclick="showInfo('kupolas')">i</button>
+
+        <button class="map-marker marker-5 red" onclick="showInfo('namas3')">i</button>
+
+    </div>
+
+    <div id="infoBox" class="info-box">
+        Paspauskite ant ženkliuko žemėlapyje.
+    </div>
+
+    <a class="back-button" href="index.html">
+        ← Pagrindinis puslapis
+    </a>
 
 </div>
 
-<a class="back-button"
-href="index.html">
-
-← Pagrindinis puslapis
-
-</a>
-
-</div>
+<script src="informacija.js"></script>
 
 </body>
 </html>
