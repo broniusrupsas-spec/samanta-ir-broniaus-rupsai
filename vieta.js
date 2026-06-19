@@ -3,81 +3,81 @@ const seating = [
     {
         table: 1,
         guests: [
-            { name: "Aldas Plankis", gender: "male" },
-            { name: "Kamilė Mikšionė", gender: "female" },
-            { name: "Pijus Mikšionis", gender: "male" },
-            { name: "Benas Mockus", gender: "male" },
-            { name: "Diana Mockienė", gender: "female" },
-            { name: "Gabija Būtėnaitė", gender: "female" },
-            { name: "Kamile Kvedaraitė", gender: "female" },
-            { name: "Julija Tumul", gender: "female" },
-            { name: "Valerija Valner", gender: "female" },
-            { name: "Evelina Kaukėnaitė", gender: "female" }
+            { name: "Aldas Plankis" },
+            { name: "Kamilė Mikšionė" },
+            { name: "Pijus Mikšionis" },
+            { name: "Benas Mockus" },
+            { name: "Diana Mockienė" },
+            { name: "Gabija Būtėnaitė" },
+            { name: "Kamile Kvedaraitė" },
+            { name: "Julija Tumul" },
+            { name: "Valerija Valner" },
+            { name: "Evelina Kaukėnaitė" }
         ]
     },
 
     {
         table: 2,
         guests: [
-            { name: "Violeta Žavoronkienė", gender: "female" },
-            { name: "Laura Balsienė", gender: "female" },
-            { name: "Viktoras Rupšas", gender: "male" },
-            { name: "Nerijus Paškevičius", gender: "male" },
-            { name: "Daiva Paškevičienė", gender: "female" },
-            { name: "Renata Bit", gender: "female" },
-            { name: "Karolis Rupšas", gender: "male" },
-            { name: "Zita Balsienė", gender: "female" },
-            { name: "Bronislovas Rupšas", gender: "male" },
-            { name: "Uogutė Rupšienė", gender: "female" }
+            { name: "Violeta Žavoronkienė" },
+            { name: "Laura Balsienė" },
+            { name: "Viktoras Rupšas" },
+            { name: "Nerijus Paškevičius" },
+            { name: "Daiva Paškevičienė" },
+            { name: "Renata Bit" },
+            { name: "Karolis Rupšas" },
+            { name: "Zita Balsienė" },
+            { name: "Bronislovas Rupšas" },
+            { name: "Uogutė Rupšienė" }
         ]
     },
 
     {
         table: 3,
         guests: [
-            { name: "Meida Mikalaikevičiūtė", gender: "female" },
-            { name: "Samanta Žavoronkytė", gender: "female" },
-            { name: "Bronius Rupšas", gender: "male" },
-            { name: "Edvinas Stirbys", gender: "male" },
-            { name: "Ema Girždytė", gender: "female" },
-            { name: "Vanesa Kaminskaitė", gender: "female" },
-            { name: "Žygimantas Kontrimas", gender: "male" },
-            { name: "Paulius Stonkus", gender: "male" },
-            { name: "Indrė Klevinskaitė", gender: "female" },
-            { name: "Gabija Zajanckauskaitė", gender: "female" },
-            { name: "Patricija Markevičiūtė", gender: "female" }
+            { name: "Meida Mikalaikevičiūtė" },
+            { name: "Samanta Žavoronkytė" },
+            { name: "Bronius Rupšas" },
+            { name: "Edvinas Stirbys" },
+            { name: "Ema Girždytė" },
+            { name: "Vanesa Kaminskaitė" },
+            { name: "Žygimantas Kontrimas" },
+            { name: "Paulius Stonkus" },
+            { name: "Indrė Klevinskaitė" },
+            { name: "Gabija Zajanckauskaitė" },
+            { name: "Patricija Markevičiūtė" }
         ]
     },
 
     {
         table: 4,
         guests: [
-            { name: "Kazimieras Pabiržis", gender: "male" },
-            { name: "Kamile Pabiržienė", gender: "female" },
-            { name: "Aušrinė Jokubauskaitė", gender: "female" },
-            { name: "Giedrius Dima", gender: "male" },
-            { name: "Rokas Narkus", gender: "male" },
-            { name: "Beatričė", gender: "female" },
-            { name: "Dovydas Narkus", gender: "male" },
-            { name: "Alvyda", gender: "female" },
-            { name: "Viktorija Linkevičiūtė", gender: "female" },
-            { name: "Paulius Bastys", gender: "male" },
-            { name: "Patricija Šarskutė", gender: "female" },
-            { name: "Benas Tamaušauskas", gender: "male" }
+            { name: "Kazimieras Pabiržis" },
+            { name: "Kamile Pabiržienė" },
+            { name: "Aušrinė Jokubauskaitė" },
+            { name: "Giedrius Dima" },
+            { name: "Rokas Narkus" },
+            { name: "Beatričė" },
+            { name: "Dovydas Narkus" },
+            { name: "Alvyda" },
+            { name: "Viktorija Linkevičiūtė" },
+            { name: "Paulius Bastys" },
+            { name: "Patricija Šarskutė" },
+            { name: "Benas Tamaušauskas" }
         ]
     },
 
     {
         table: 5,
         guests: [
-            { name: "Mantas Rupšas", gender: "male" },
-            { name: "Laurynas Girdžius", gender: "male" },
-            { name: "Viktorija Rupšaitė", gender: "female" },
-            { name: "Jurga Balsytė", gender: "female" },
-            { name: "Neringa Balsytė", gender: "female" },
-            { name: "Marius Alšauskis", gender: "male" },
-            { name: "Ugnius Paškevičius", gender: "male" },
-            { name: "Nedas Paškevičius", gender: "male" }
+            { name: "Mantas Rupšas" },
+            { name: "Laurynas Girdžius" },
+            { name: "Viktorija Rupšaitė" },
+            { name: "Jurga Balsytė" },
+            { name: "Neringa Balsytė" },
+            { name: "Marius Alšauskis" },
+            { name: "Ugnius Paškevičius" },
+            { name: "Nedas Paškevičius" }
         ]
     }
 ];
@@ -107,24 +107,6 @@ function renderTables(){
         circle.innerText = tableData.table;
 
         tableBlock.appendChild(circle);
-
-        const total = tableData.guests.length;
-
-        tableData.guests.forEach((guest, index) => {
-            const angle = (360 / total) * index;
-
-            const guestEl = document.createElement("div");
-            guestEl.className = "guest";
-            guestEl.style.setProperty("--angle", `${angle}deg`);
-
-            const avatar = document.createElement("div");
-            avatar.className = `avatar ${guest.gender}`;
-            avatar.innerText = "♙";
-
-            guestEl.appendChild(avatar);
-            tableBlock.appendChild(guestEl);
-        });
-
         area.appendChild(tableBlock);
     });
 }
