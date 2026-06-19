@@ -39,7 +39,7 @@ body{
 }
 
 .sleep-search input{
-    width:280px;
+    width:360px;
     max-width:100%;
     padding:16px;
     border-radius:12px;
@@ -63,7 +63,8 @@ body{
 
 #sleepResult{
     margin-top:25px;
-    font-size:1.6rem;
+    font-size:1.45rem;
+    line-height:1.7;
 }
 
 .map-wrapper{
@@ -86,13 +87,14 @@ body{
     height:48px;
     border-radius:50%;
     border:3px solid white;
-    background:rgba(170,120,60,.85);
+    background:rgba(190,145,70,.9);
     color:white;
     font-size:1.4rem;
     cursor:pointer;
     transform:translate(-50%, -50%);
     box-shadow:0 0 0 8px rgba(255,255,255,.25);
     transition:.25s;
+    z-index:3;
 }
 
 .map-marker:hover{
@@ -100,34 +102,66 @@ body{
     box-shadow:0 0 0 12px rgba(255,255,255,.25);
 }
 
-.map-marker.red{
-    background:rgba(210,40,40,.9);
+.marker-label{
+    position:absolute;
+    color:#ffd36b;
+    font-size:1rem;
+    font-weight:bold;
+    text-transform:uppercase;
+    letter-spacing:.5px;
+    z-index:4;
+    text-shadow:0 2px 5px rgba(0,0,0,.9);
 }
 
-/* Taškų vietos ant tavo zemelapis.png */
+/* Taškai ant tavo zemelapis.png */
 .marker-1{
-    left:41%;
+    left:43.5%;
+    top:22.5%;
+}
+
+.label-1{
+    left:48%;
     top:22%;
 }
 
 .marker-2{
-    left:56%;
-    top:44%;
+    left:61%;
+    top:45%;
+}
+
+.label-2{
+    left:65%;
+    top:43.5%;
 }
 
 .marker-3{
-    left:45%;
-    top:63%;
+    left:48%;
+    top:64%;
+}
+
+.label-3{
+    left:37%;
+    top:66%;
 }
 
 .marker-4{
-    left:88%;
-    top:73%;
+    left:89%;
+    top:77%;
+}
+
+.label-4{
+    left:91%;
+    top:81%;
 }
 
 .marker-5{
-    left:78%;
-    top:88%;
+    left:77%;
+    top:93%;
+}
+
+.label-5{
+    left:79%;
+    top:95%;
 }
 
 .info-box{
@@ -146,6 +180,10 @@ body{
     margin-bottom:15px;
 }
 
+.info-box ul{
+    margin-left:25px;
+}
+
 @media(max-width:768px){
 
     .map-page h1{
@@ -160,17 +198,21 @@ body{
     .sleep-search button{
         margin-left:0;
         margin-top:12px;
-        width:280px;
+        width:360px;
         max-width:100%;
     }
 
     .map-marker{
-        width:38px;
-        height:38px;
-        font-size:1.1rem;
+        width:36px;
+        height:36px;
+        font-size:1rem;
+    }
+
+    .marker-label{
+        font-size:.65rem;
     }
 
     .info-box{
-        font-size:1.15rem;
+        font-size:1.1rem;
     }
 }
