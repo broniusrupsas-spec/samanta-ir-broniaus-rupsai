@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Žemėlapis ir informacija</title>
+    <title>Informacija</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="informacija.css">
@@ -20,13 +20,13 @@
     <h1>Žemėlapis</h1>
 
     <p class="subtitle">
-        Čia galite rasti savo nakvynės vietą ir svarbiausią informaciją apie sodybą.
+        Čia galite rasti savo nakvynės vietą ir kitą svarbią informaciją.
     </p>
 
     <div class="sleep-search">
         <h2>Kur aš nakvosiu?</h2>
 
-        <input id="sleepInput" type="text" placeholder="Įveskite vardą">
+        <input id="sleepInput" type="text" placeholder="Įveskite vardą arba vardą ir pavardę">
 
         <button onclick="findSleepPlace()">Rasti</button>
 
@@ -41,15 +41,20 @@
 
         <img src="zemelapis.png" alt="Sodybos žemėlapis">
 
-        <button class="map-marker marker-1" onclick="showInfo('namas1')">i</button>
+        <button class="map-marker marker-1" onclick="showInfo('viesbutis')">i</button>
+        <span class="marker-label label-1">Viešbutis</span>
 
         <button class="map-marker marker-2" onclick="showInfo('sale')">i</button>
+        <span class="marker-label label-2">Pokylių salė</span>
 
-        <button class="map-marker marker-3" onclick="showInfo('namas2')">i</button>
+        <button class="map-marker marker-3" onclick="showInfo('sveciu1')">i</button>
+        <span class="marker-label label-3">Svečių namelis</span>
 
         <button class="map-marker marker-4" onclick="showInfo('kupolas')">i</button>
+        <span class="marker-label label-4">Kupolas</span>
 
-        <button class="map-marker marker-5 red" onclick="showInfo('namas3')">i</button>
+        <button class="map-marker marker-5" onclick="showInfo('sveciu2')">i</button>
+        <span class="marker-label label-5">Svečių namelis 2</span>
 
     </div>
 
