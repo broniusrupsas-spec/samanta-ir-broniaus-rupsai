@@ -289,17 +289,17 @@ const accommodation = [
 const info = {
     viesbutis: `
         <h2>🏠 Viešbutis</h2>
-        <p>Čia yra dalis svečių miegamųjų kambarių.</p>
+        <p>Čia yra svečių miegamieji.</p>
     `,
 
     sale: `
         <h2>🏛️ Pokylių salė</h2>
-        <p>Čia vyks visas veiksmas po 12 valandos iki kol galėsim.</p>
+        <p>Čia persikelsim švęsti po 12 valandos iki kol galėsim.</p>
     `,
 
     sveciu1: `
         <h2>🏠 Svečių namelis</h2>
-        <p>Čia yra svečių miegamieji kambariai ir 2 aukšto miegamos vietos.</p>
+        <p>Čia yra svečių miegamieji kambariai.</p>
     `,
 
     kupolas: `
@@ -309,7 +309,7 @@ const info = {
 
     sveciu2: `
         <h2>🏠 Svečių namelis 2</h2>
-        <p>Čia yra papildomos svečių miegamosios vietos.</p>
+        <p>Čia yra svečių miegamieji kambariai.</p>
     `
 };
 
