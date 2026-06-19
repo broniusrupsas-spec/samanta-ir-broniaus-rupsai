@@ -1,86 +1,39 @@
 <!DOCTYPE html>
 <html lang="lt">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kur sėdėsiu šventės metu?</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vieta.css">
 
-<title>Kur mano vieta?</title>
-
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="vieta.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<div class="page">
+<div class="seat-page">
 
-<h1 class="page-title">
+    <h1>Kur sėdėsiu šventės metu?</h1>
 
-Kur mano vieta?
+    <p class="seat-subtitle">
+        Įveskite savo vardą arba vardą ir pavardę.
+    </p>
 
-</h1>
+    <div class="seat-search">
+        <input id="seatInput" type="text" placeholder="Vardas arba vardas ir pavardė">
+        <button onclick="findSeat()">Rasti</button>
+        <div id="seatResult"></div>
+    </div>
 
-<div class="search-box">
+    <div class="tables-area" id="tablesArea"></div>
 
-<input
-id="searchInput"
-type="text"
-placeholder="Įveskite vardą">
-
-<button onclick="findSeat()">
-
-Rasti
-
-</button>
-
-</div>
-
-<div id="result">
-
-</div>
-
-
-<div class="tables-layout">
-
-<div class="table table1">
-    <div class="circle yellow">1</div>
-</div>
-
-
-<div class="table table2">
-    <div class="circle purple">2</div>
-</div>
-
-
-<div class="table table3">
-    <div class="circle blue">3</div>
-</div>
-
-
-<div class="table table4">
-    <div class="circle green">4</div>
-</div>
-
-
-<div class="table table5">
-    <div class="circle pink">5</div>
-</div>
-
-
-</div>
-
-<a class="back-button" href="index.html">
-
-← Pagrindinis puslapis
-
-</a>
+    <a class="back-button" href="index.html">
+        ← Pagrindinis puslapis
+    </a>
 
 </div>
 
