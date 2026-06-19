@@ -109,12 +109,9 @@ function renderTables(){
         tableBlock.appendChild(circle);
 
         const total = tableData.guests.length;
-        const startAngle = -155;
-        const endAngle = 155;
-        const step = total === 1 ? 0 : (endAngle - startAngle) / (total - 1);
 
         tableData.guests.forEach((guest, index) => {
-            const angle = startAngle + step * index;
+            const angle = (360 / total) * index;
 
             const guestEl = document.createElement("div");
             guestEl.className = "guest";
@@ -122,7 +119,7 @@ function renderTables(){
 
             const avatar = document.createElement("div");
             avatar.className = `avatar ${guest.gender}`;
-            avatar.innerText = guest.gender === "male" ? "♙" : "♙";
+            avatar.innerText = "♙";
 
             guestEl.appendChild(avatar);
             tableBlock.appendChild(guestEl);
@@ -210,7 +207,7 @@ function showSeatResult(person){
 
     result.innerHTML = `
         Jūsų vieta:<br>
-        <strong>${person.table} stalas</strong>
+        <strong>${person.table} STALAS</strong>
     `;
 }
 
