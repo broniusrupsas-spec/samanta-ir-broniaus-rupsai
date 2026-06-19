@@ -62,9 +62,16 @@ body{
     line-height:1.7;
 }
 
+#seatResult strong{
+    display:block;
+    margin-top:10px;
+    font-size:2.8rem;
+    letter-spacing:3px;
+}
+
 .tables-area{
     position:relative;
-    min-height:780px;
+    min-height:850px;
     background:#f8f6ef;
     border-radius:24px;
     overflow:hidden;
@@ -77,45 +84,46 @@ body{
 
 .table-block{
     position:absolute;
-    width:260px;
-    height:260px;
+    width:330px;
+    height:330px;
 }
 
 .table-circle{
     position:absolute;
     left:50%;
     top:50%;
-    width:155px;
-    height:155px;
+    width:190px;
+    height:190px;
     border-radius:50%;
     transform:translate(-50%, -50%);
     display:flex;
     justify-content:center;
     align-items:center;
-    font-size:3.2rem;
-    color:rgba(255,255,255,.75);
-    border:1px solid rgba(255,255,255,.5);
+    font-size:5rem;
+    font-weight:700;
+    color:rgba(255,255,255,.9);
     background:linear-gradient(145deg,#bdb8ad,#8f8a82);
+    border:1px solid rgba(255,255,255,.5);
     box-shadow:
         inset 0 0 25px rgba(255,255,255,.18),
-        0 12px 30px rgba(0,0,0,.22);
+        0 14px 35px rgba(0,0,0,.25);
 }
 
 .guest{
     position:absolute;
     left:50%;
     top:50%;
-    width:46px;
-    height:46px;
+    width:48px;
+    height:48px;
     transform:
         rotate(var(--angle))
-        translate(0, -122px)
+        translate(0, -150px)
         rotate(calc(-1 * var(--angle)));
 }
 
 .avatar{
-    width:40px;
-    height:40px;
+    width:42px;
+    height:42px;
     border-radius:50%;
     margin:auto;
     display:flex;
@@ -123,7 +131,7 @@ body{
     align-items:center;
     font-size:1.25rem;
     border:2px solid white;
-    box-shadow:0 4px 12px rgba(0,0,0,.28);
+    box-shadow:0 4px 12px rgba(0,0,0,.25);
 }
 
 .avatar.female{
@@ -135,13 +143,13 @@ body{
 }
 
 .table-1{
-    left:5%;
-    top:390px;
+    left:4%;
+    top:410px;
 }
 
 .table-2{
-    left:20%;
-    top:165px;
+    left:19%;
+    top:180px;
 }
 
 .table-3{
@@ -151,12 +159,12 @@ body{
 
 .table-4{
     left:67%;
-    top:145px;
+    top:165px;
 }
 
 .table-5{
-    left:74%;
-    top:440px;
+    left:73%;
+    top:470px;
 }
 
 @media(max-width:1000px){
@@ -165,8 +173,8 @@ body{
         min-height:auto;
         display:flex;
         flex-direction:column;
-        gap:80px;
-        padding:70px 20px;
+        gap:90px;
+        padding:80px 20px;
         align-items:center;
     }
 
@@ -195,19 +203,20 @@ body{
     }
 
     .table-block{
-        width:245px;
-        height:245px;
+        width:290px;
+        height:290px;
     }
 
     .table-circle{
-        width:145px;
-        height:145px;
+        width:165px;
+        height:165px;
+        font-size:4rem;
     }
 
     .guest{
         transform:
             rotate(var(--angle))
-            translate(0, -113px)
+            translate(0, -132px)
             rotate(calc(-1 * var(--angle)));
     }
 }
