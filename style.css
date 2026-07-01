@@ -19,9 +19,9 @@ body{
 
 .left-side{
     width:55%;
-    background-image:url("hero2026.jpg");
+    background-image:url("hero2026.jpg?v=4");
     background-size:cover;
-    background-position:center top;
+    background-position:center 8%;
     background-repeat:no-repeat;
 }
 
