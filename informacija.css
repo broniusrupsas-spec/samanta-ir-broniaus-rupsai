@@ -170,14 +170,14 @@ body{
 }
 
 .label-6{
-    left:60.5%;
-    top:64%;
-    color:white;
-    background:#006eff;
-    padding:6px 14px;
-    border-radius:50%;
+    left:64.5%;
+    top:65%;
+    color:#ffd36b;
+    font-size:1rem;
+    font-weight:bold;
+    text-shadow:0 2px 8px rgba(0,0,0,.9);
+    white-space:nowrap;
     text-transform:none;
-    font-size:.9rem;
 }
 
 /* Telefonams – nerodom ilgų užrašų ant žemėlapio */
