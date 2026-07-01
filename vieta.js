@@ -192,5 +192,3 @@ function showSeatResult(person){
         <strong>${person.table} STALAS</strong>
     `;
 }
-
-renderTables();
