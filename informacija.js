@@ -304,7 +304,12 @@ const info = {
     sveciu3: `
         <h2>🏠 Svečių namelis 3</h2>
         <p>Svečių miegamieji kambariai.</p>
-    `
+    `,
+    
+    prudelis: `
+    <h2>🌊 Prūdelis</h2>
+    <p>Svečius maloniai prašome šiame vandens telkinyje nesimaudyti.</p>
+`
 };
 
 function normalizeText(text){
