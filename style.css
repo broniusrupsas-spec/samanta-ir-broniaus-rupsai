@@ -20,12 +20,20 @@ body{
 .left-side{
 
     width:55%;
+    overflow:hidden;
 
-    background-image:url("hero2026.jpg");
+}
 
-    background-size:cover;
+.left-side img{
 
-    background-position:50% 20%;
+    width:100%;
+    height:100vh;
+
+    object-fit:cover;
+
+    object-position:center top;
+
+    display:block;
 
 }
 
