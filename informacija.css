@@ -82,34 +82,40 @@ body{
 
 .map-marker{
     position:absolute;
-    width:40px;
-    height:40px;
+    width:28px;
+    height:28px;
     border-radius:50%;
-    border:3px solid white;
+    border:2px solid #fff;
     background:#b8913e;
-    color:white;
-    font-size:1.2rem;
-    font-weight:bold;
+    color:#fff;
+    font-size:.95rem;
+    font-weight:700;
     cursor:pointer;
-    z-index:3;
-    box-shadow:0 0 0 6px rgba(255,255,255,.22);
-    transform:translate(-50%, -50%);
+    z-index:4;
+    box-shadow:0 0 0 4px rgba(255,255,255,.22);
+    transform:translate(-50%,-50%);
     transition:.2s;
 }
 
 .map-marker:hover{
-    transform:translate(-50%,-50%) scale(1.08);
+    transform:translate(-50%,-50%) scale(1.12);
 }
 
 .marker-label{
+    display:none;
     position:absolute;
     color:#ffd36b;
-    font-size:1.05rem;
+    font-size:1rem;
     font-weight:bold;
     text-transform:uppercase;
     text-shadow:0 2px 8px rgba(0,0,0,.9);
-    z-index:2;
+    z-index:3;
     white-space:nowrap;
+}
+
+/* Pavadinimas rodomas tik tada, kai žymą paryškina paieška */
+.marker-label.active-label{
+    display:block;
 }
 
 /* Vietos ant žemėlapio */
@@ -172,43 +178,15 @@ body{
 .label-6{
     left:64.5%;
     top:65%;
-    color:#ffd36b;
-    font-size:1rem;
-    font-weight:bold;
-    text-shadow:0 2px 8px rgba(0,0,0,.9);
-    white-space:nowrap;
-    text-transform:none;
 }
 
-/* Telefonams – nerodom ilgų užrašų ant žemėlapio */
-@media(max-width:768px){
+/* Paryškinimas, kai žmogus surandamas per paiešką */
 
-    .map-marker{
-        width:38px;
-        height:38px;
-        font-size:1.1rem;
-        border-width:3px;
-        box-shadow:0 0 0 5px rgba(255,255,255,.25);
-    }
-
-    .marker-label{
-        font-size:.75rem;
-    }
-
-    .label-4{
-        left:74%;
-        top:80%;
-    }
-
-    .label-5{
-        left:48%;
-        top:91%;
-    }
-
-    .label-6{
-        font-size:.7rem;
-        padding:4px 10px;
-    }
+.map-marker.active-marker{
+    background:#fff;
+    color:#111;
+    border-color:#b8913e;
+    box-shadow:0 0 0 5px rgba(184,145,62,.45);
 }
 
 .info-box{
@@ -247,16 +225,6 @@ body{
         margin-top:12px;
         width:360px;
         max-width:100%;
-    }
-
-    .map-marker{
-        width:36px;
-        height:36px;
-        font-size:1rem;
-    }
-
-    .marker-label{
-        font-size:.65rem;
     }
 
     .info-box{
