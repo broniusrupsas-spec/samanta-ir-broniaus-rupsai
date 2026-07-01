@@ -70,15 +70,14 @@ body{
 .map-wrapper{
     position:relative;
     width:100%;
-    border-radius:18px;
-    overflow:hidden;
-    border:2px solid rgba(218,180,105,.6);
-    box-shadow:0 0 40px rgba(0,0,0,.7);
+    max-width:1200px;
+    margin:40px auto;
 }
 
 .map-wrapper img{
     width:100%;
     display:block;
+    border-radius:20px;
 }
 
 .map-marker{
@@ -86,82 +85,125 @@ body{
     width:48px;
     height:48px;
     border-radius:50%;
-    border:3px solid white;
-    background:rgba(190,145,70,.9);
+    border:4px solid white;
+    background:#b8913e;
     color:white;
-    font-size:1.4rem;
+    font-size:1.5rem;
+    font-weight:bold;
     cursor:pointer;
-    transform:translate(-50%, -50%);
-    box-shadow:0 0 0 8px rgba(255,255,255,.25);
-    transition:.25s;
     z-index:3;
-}
-
-.map-marker:hover{
-    transform:translate(-50%, -50%) scale(1.12);
-    box-shadow:0 0 0 12px rgba(255,255,255,.25);
+    box-shadow:0 0 0 8px rgba(255,255,255,.25);
+    transform:translate(-50%, -50%);
 }
 
 .marker-label{
     position:absolute;
     color:#ffd36b;
-    font-size:1rem;
+    font-size:1.05rem;
     font-weight:bold;
     text-transform:uppercase;
-    letter-spacing:.5px;
-    z-index:4;
-    text-shadow:0 2px 5px rgba(0,0,0,.9);
+    text-shadow:0 2px 8px rgba(0,0,0,.9);
+    z-index:2;
+    white-space:nowrap;
 }
 
-/* Taškai ant tavo zemelapis.png */
+/* Vietos ant žemėlapio */
+
 .marker-1{
-    left:43.5%;
-    top:22.5%;
+    left:39%;
+    top:18%;
 }
 
 .label-1{
-    left:48%;
-    top:22%;
+    left:43.5%;
+    top:18%;
 }
 
 .marker-2{
-    left:61%;
-    top:45%;
+    left:56.5%;
+    top:42%;
 }
 
 .label-2{
-    left:65%;
-    top:43.5%;
+    left:60.5%;
+    top:41.5%;
 }
 
 .marker-3{
-    left:48%;
-    top:64%;
+    left:43%;
+    top:62%;
 }
 
 .label-3{
-    left:37%;
-    top:66%;
+    left:34%;
+    top:68%;
 }
 
 .marker-4{
-    left:89%;
-    top:77%;
+    left:85%;
+    top:76%;
 }
 
 .label-4{
-    left:91%;
-    top:81%;
+    left:79%;
+    top:80%;
 }
 
 .marker-5{
-    left:77%;
-    top:93%;
+    left:73%;
+    top:94%;
 }
 
 .label-5{
-    left:79%;
-    top:95%;
+    left:55%;
+    top:91%;
+}
+
+.marker-6{
+    left:63%;
+    top:66%;
+}
+
+.label-6{
+    left:60.5%;
+    top:64%;
+    color:white;
+    background:#006eff;
+    padding:6px 14px;
+    border-radius:50%;
+    text-transform:none;
+    font-size:.9rem;
+}
+
+/* Telefonams – nerodom ilgų užrašų ant žemėlapio */
+@media(max-width:768px){
+
+    .map-marker{
+        width:38px;
+        height:38px;
+        font-size:1.1rem;
+        border-width:3px;
+        box-shadow:0 0 0 5px rgba(255,255,255,.25);
+    }
+
+    .marker-label{
+        font-size:.75rem;
+    }
+
+    .label-4{
+        left:74%;
+        top:80%;
+    }
+
+    .label-5{
+        left:48%;
+        top:91%;
+    }
+
+    .label-6{
+        font-size:.7rem;
+        padding:4px 10px;
+    }
 }
 
 .info-box{
