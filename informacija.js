@@ -288,7 +288,7 @@ const info = {
 
     sale: `
         <h2>🏛️ Pokylių salė</h2>
-        <p>Čia vyks visas veiksmas po 12 valandos iki kol galėsim ir pusryčiai.</p>
+        <p>Čia vyks šokiai iki ryto bei pusryčiai.</p>
     `,
 
     sveciu2: `
@@ -298,7 +298,7 @@ const info = {
 
     kupolas: `
         <h2>🏕️ Kupolas</h2>
-        <p>Čia vyks visa vakarinė dalis iki 12 valandos.</p>
+        <p>Čia vyks visa vakarinė dalis.</p>
     `,
 
     sveciu3: `
